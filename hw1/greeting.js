@@ -1,56 +1,30 @@
 
-        var name=prompt("Ваше имя?","")
-        var age =prompt('age?',18);
+let name=prompt("Ваше имя?","")
+alert('Hello '+name);
 
-        alert('Hello'+name);
-
-
-        const equals = (a, b) =>
-        a.length === b.length &&
-        a.every((v, i) => v === b[i]);
-
-        const a = [1, 2, 3];
-        const b = [1, 2, 3];
-        const str = 'a';
-        const strObj = new String('a');
-
-        equals(a, b); // true
-        equals([str], [strObj]); // false
-        equals([null], [undefined]); // false
-
-
-        const colorList = [
-  {name: 'yellow', interval: 500},
-  {name: 'red', interval: 4000},
-  {name: 'yellow', interval: 500},
-  {name: 'green', interval: 4000}
-];
-
-let count = 0;
-
-function changeColor() {
-  if (count === colorList.length) {
-    count = 0;
-  }
-  console.log(colorList[count].name)
-  setTimeout(changeColor, colorList[count].interval)
-  count = count + 1;
+let arr = [1,2,3,4]
+let arr2 = [1,2,3,45]
+if (arr.length>arr2.length){
+        console.log("arr>arr2")
+}else if (arr.length<arr2.length){
+        console.log("arr<arr2")
+}else {
+        console.log("===")
 }
 
-changeColor()
+let color = prompt('Введите цвет на английском')
 
-        // const letters = ['a','b','c']
-        // const index = letters.indexOf('b')
-        //
-        // const letters =  [
-        //         {
-        //                 letter: 'a'
-        //         },
-        //         {
-        //                 letter: 'b'
-        //         },
-        //         {
-        //                 letter: 'c'
-        //         }
-        // ]
-        // const index = letters.indexOf({letter: 'b'})
+switch (color) {
+        case "green":
+                console.log('можешь переходить дорогу')
+        break;
+        case "yellow":
+                console.log('горит желтый подожди')
+        break;
+        case  "red":
+                console.log('горит красный переходить нельзя')
+        break;
+        default:
+                console.log('цвет не найден')
+        break;
+}
