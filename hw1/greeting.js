@@ -28,3 +28,9 @@ switch (color) {
                 console.log('цвет не найден')
         break;
 }
+
+let name = 'guliza'
+function getName(name) {
+        console.log('hello', name)
+}
+getName(name)
